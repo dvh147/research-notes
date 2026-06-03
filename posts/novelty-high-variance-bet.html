@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Novelty is a high-variance bet</title>
+<meta name="description" content="Inventions built from more novel knowledge combinations don't earn higher impact on average -- if anything slightly lower -- but they have much higher variance, fattening both the breakthrough tail and the failure tail, so pursuing novelty is a risk choice, not a free lunch.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="../index.html">Research Notes</a></header>
+<main>
+<article class="post"><a class="back" href="../index.html">&larr; all notes</a>
+<p class="meta"><time>2026-06-02</time> &middot; 13 min read &middot; <span class="tag">economics of innovation</span> <span class="tag">science of science</span></p>
+<p>&quot;Be original.&quot; &quot;Think different.&quot; &quot;Disrupt.&quot; The advice we give inventors,
+scientists, and founders is relentlessly pro-novelty, and it comes with an implied
+promise: novel work is <em>better</em> work. Combine ideas no one has combined before and
+you&#39;ll produce something more useful, more cited, more valuable.</p>
+<p>It&#39;s a lovely theory. The trouble is that when economists go and measure it -- across
+millions of patents and papers, over decades, with half a dozen different ways of
+defining &quot;novel&quot; -- the promise mostly doesn&#39;t show up. Novel inventions are not, on
+average, more impactful than conventional ones. If anything they&#39;re a touch <em>less</em> so.</p>
+<p>What novelty changes is not the average. It&#39;s the <strong>spread</strong>. Reach for an unusual
+combination of ideas and you widen the range of what can happen: you make a home run
+more likely <em>and</em> a strikeout more likely at the same time. The average barely moves;
+the variance balloons.</p>
+<p>That reframes the whole pep talk. &quot;Be novel&quot; is not advice to raise your expected
+payoff. It&#39;s advice to <strong>buy a riskier lottery ticket</strong> -- to trade a predictable,
+middling result for a small chance at a breakthrough and a large chance at a dud. Which
+is a perfectly good thing to do, for the right person in the right situation. But it is
+a risk choice, not a free lunch, and treating it as a free lunch leads funders,
+managers, and inventors astray.</p>
+<p>That&#39;s the claim of this post, and the evidence for it is unusually convergent. Let me
+build it up.</p>
+<h2>Invention is recombination -- and recombination is a search in the dark</h2>
+<p>Start with where the variance comes from. The dominant model of invention, going back
+to Schumpeter, treats a new invention as a <strong>recombination</strong> of existing components:
+the automobile is an engine plus a carriage; CRISPR gene editing borrows machinery
+bacteria already use. On this view, inventing is <em>search</em> -- you&#39;re wandering a vast
+landscape of possible component combinations looking for ones that work.</p>
+<p>Here&#39;s the key intuition. If you recombine components you know well, in ways that have
+been tried before, you can predict the result pretty accurately -- it&#39;ll be fine,
+incremental, unsurprising. If you reach for components you&#39;ve never used, or a pairing
+no one has attempted, you genuinely don&#39;t know what you&#39;ll get. You might stumble onto a
+new peak in the landscape. You might fall off a cliff. <strong>Unfamiliarity doesn&#39;t bias the
+result up or down so much as it makes the result unpredictable.</strong></p>
+<p>Lee Fleming put numbers on this in a foundational 2001 study in <em>Management Science</em>,
+<a href="https://doi.org/10.1287/mnsc.47.1.117.10671">&quot;Recombinant uncertainty in technological search&quot;</a>.
+Analyzing 17,264 US patents, he used a count model that estimates not just the <em>mean</em>
+number of citations an invention earns but its <em>variance</em> directly. The finding: patents
+built from new combinations of components are <strong>less useful on average, and at the same
+time more variable</strong> -- the variance of their impact is significantly higher. Novelty,
+in his words, &quot;implies an increase in the variability that can result in both failure
+and breakthrough.&quot;</p>
+<p>A toy example makes the shape concrete. Imagine impact is measured in forward citations,
+and suppose:</p>
+<ul>
+<li>A <strong>conventional</strong> invention is a draw from a tight distribution: almost always lands
+between 8 and 12 citations, averaging 10. Predictable.</li>
+<li>A <strong>novel</strong> invention is a draw from a wide distribution centered slightly <em>lower</em> --
+say it averages 9 -- but with a long right tail (one in twenty earns 150) and a fat
+left tail (one in three earns zero).</li>
+</ul>
+<p>Make a hundred of each. The conventional hundred cluster around 10 and produce no
+disasters and no moonshots. The novel hundred contain more zeros than the conventional
+batch <em>and</em> more triple-digit hits -- even though their average is a hair <em>lower</em>. If
+you only looked at the averages (9 vs 10) you&#39;d conclude novelty is slightly bad and
+move on. You&#39;d have missed the entire point: all the action -- every breakthrough and
+every flameout -- is in the novel pile.</p>
+<h2>Novelty fattens the tails, and thins the middle</h2>
+<p>Fleming&#39;s result has been replicated and sharpened with far bigger data and better
+measures of novelty. The most direct confirmation is
+<a href="https://doi.org/10.1016/j.respol.2015.11.010">Verhoeven, Bakker &amp; Veugelers (2016)</a> in
+<em>Research Policy</em>, who build &quot;ex ante&quot; novelty indicators -- flags you can compute <em>when
+the patent is filed</em>, before you know how it did -- for 5.3 million patent families
+spanning 1980-2011. They separate two kinds of novelty: <strong>novelty in recombination</strong>
+(this patent joins technology classes never previously joined) and <strong>novelty in
+knowledge origins</strong> (it draws on technological or scientific knowledge that is itself
+brand new).</p>
+<p>Then they ask how those flags relate to the eventual distribution of impact, again with
+a model that lets novelty move the mean and the spread separately. The result is the
+cleanest statement of the claim I know of: technological novelty <strong>lowers</strong> the average
+citations an invention earns while <strong>raising the variance</strong> of impact and the odds of
+landing among the extreme positive outliers. The rare inventions that are novel on <em>all</em>
+dimensions at once -- a new recombination drawing on new technological <em>and</em> new
+scientific knowledge -- are the most extreme of all: in the authors&#39; data they have more
+than double the odds of landing as a 5-standard-deviation citation outlier, the kind of
+runaway hit that defines a technological generation.</p>
+<p>Picture the two impact distributions side by side. Novelty doesn&#39;t slide the conventional
+curve to the right; it stretches it outward in both directions and hollows out the
+middle:</p>
+<pre><code>        impact (forward citations) -&gt;
+        zero    low     middle      high    extreme
+CONVENTIONAL
+        ###     #######  ##########  ####    #
+                         ^ most inventions land here, predictably
+
+NOVEL
+        #######  #####   ####        #####   #####
+        ^ more duds            thinner middle    ^ fatter breakthrough tail
+</code></pre>
+<p>Same area under each (these are a hundred inventions either way). But the novel batch
+has migrated <em>out of the safe middle and into both tails</em>. That is what &quot;higher variance,
+similar-or-lower mean&quot; looks like. It is the empirical signature that recurs through this
+whole literature.</p>
+<h2>The same pattern shows up in science</h2>
+<p>If this were just a quirk of patents, I&#39;d be less confident. It isn&#39;t. The identical
+shape appears when you measure the novelty of <em>scientific papers</em>.</p>
+<p><a href="https://doi.org/10.1016/j.respol.2017.06.006">Wang, Veugelers &amp; Stephan (2017)</a>, again
+in <em>Research Policy</em>, flag a paper as novel if it makes a first-time-ever combination of
+the research fields it cites, weighted by how hard that combination was to make. Across
+all 785,000 Web of Science articles from 2001, novelty does <strong>not</strong> raise a paper&#39;s
+average citations -- but it raises the variance: citation dispersion is about 18% higher
+for highly novel papers, and <em>both</em> tails thicken. Highly novel papers are about 18% more
+likely to land in the top 10% of citations <strong>and</strong> about 15% more likely to land in the
+bottom 10%. Over a long enough window they have roughly 57% higher odds of becoming a
+top-1% &quot;big hit.&quot;</p>
+<p>Two details make this study especially useful. First, the upside is <strong>delayed</strong>: highly
+novel papers are <em>less</em> likely to be top-cited when you only look three years out, and
+only pull ahead from about year four onward. The breakthrough tail takes time to
+materialize. Second, novel papers are systematically published in <strong>lower-impact-factor
+journals</strong> -- around 17% lower, holding quality constant -- because gatekeepers, judging
+on short horizons, are wary of them. The authors&#39; warning is pointed: evaluation systems
+that lean on short-window citation counts and journal prestige are <em>structurally biased
+against</em> high-variance novel work. They will systematically under-fund exactly the bets
+whose payoff is a fat but slow tail.</p>
+<p>There&#39;s a complementary and rather beautiful result from
+<a href="https://doi.org/10.1126/science.1240474">Uzzi, Mukherjee, Stringer &amp; Jones (2013)</a>,
+who analyzed 17.9 million papers in <em>Science</em>. They scored each paper&#39;s combinations of
+prior work as typical or atypical relative to what you&#39;d expect by chance. The papers
+most likely to be hits were <em>not</em> the wildly unconventional ones. They were papers with a
+<strong>highly conventional core plus a tail of atypical combinations</strong> -- mostly standing on
+familiar ground, with one or two unusual leaps. Those papers hit the top 5% of citations
+about 9 times per 100, versus a baseline of 5 per 100 -- nearly <strong>double</strong> the hit rate.
+Papers that were novel <em>without</em> a conventional anchor did barely better than average
+(5.3 per 100). Hold that finding; it&#39;s the key to the most useful nuance in this whole
+area.</p>
+<h2>A natural experiment in risk-taking</h2>
+<p>Almost everything above is correlational: novel things turn out to be more variable. But
+correlation invites the worry that some third factor -- ambitious inventors, say -- drives
+both novelty and variance. The closest thing to a clean test comes from
+<a href="https://doi.org/10.1002/smj.2155">Conti (2014)</a> in the <em>Strategic Management Journal</em>,
+who exploits an accident of US law. States differ, and have changed over time, in how
+strictly they enforce <strong>non-compete agreements</strong>. Stronger enforcement keeps inventors
+(and their knowledge) from leaking to rivals, which makes high-risk, hard-to-imitate R&amp;D
+relatively more attractive to firms. So enforcement changes act like an external nudge
+toward riskier projects, independent of any one inventor&#39;s temperament.</p>
+<p>The prediction, and the finding: where non-competes became more enforceable, firms&#39;
+inventions moved <strong>into both tails of the value distribution at once</strong> -- more
+breakthroughs <em>and</em> more failures -- and into more novel technological areas. (Conti&#39;s
+paper is paywalled and I could not verify the exact effect sizes against the original
+tables, so I&#39;m reporting the direction of the result, not magnitudes.) That two-tailed
+movement is the giveaway. A nudge toward novelty and risk doesn&#39;t shift the average
+outcome up; it <em>spreads the outcomes out</em>. That&#39;s variance, caused.</p>
+<h2>The bet is partly riggable</h2>
+<p>If the story stopped here it would be a little fatalistic: novelty is a coin flip with a
+fat tail, take it or leave it. But the most interesting recent work is about how to
+<strong>tilt the odds</strong> -- how to keep the breakthrough tail while trimming the failure tail.
+The bet, it turns out, is partly riggable, and this is where the honest qualifier to my
+claim lives.</p>
+<p><strong>The two tails aren&#39;t welded together.</strong> A natural assumption -- the one Fleming&#39;s
+model makes -- is that anything raising the breakthrough probability raises the failure
+probability symmetrically. <a href="https://doi.org/10.1287/mnsc.1090.1072">Singh &amp; Fleming (2010)</a>
+showed that&#39;s wrong. Studying 515,816 patents with quantile regressions (which look at
+the whole distribution, not just the mean), they found that <strong>collaboration moves the two
+tails independently and in the <em>same favorable direction</em></strong>. Relative to lone inventors,
+team-invented patents are about 28% more likely to be a breakthrough (top 5%) <em>and</em> about
+9% less likely to be a complete dud (zero citations). Inventions backed by an organization
+do better still on both ends. The mechanism is intuitive: more eyes catch the dead ends
+early (trimming the failure tail), while diverse experience opens up more recombinant
+possibilities (fattening the breakthrough tail). Variance, in other words, is
+<em>decomposable</em> -- you can sometimes buy upside without buying symmetric downside.</p>
+<p><strong>Novelty over familiar ground is a better-than-fair bet.</strong> Recall the Uzzi recipe:
+conventional core, atypical dash. The patent analogue comes from
+<a href="https://doi.org/10.1093/icc/dtu029">Arts &amp; Veugelers (2015)</a>, who studied 26 years of US
+biotechnology patents and distinguished <em>what</em> gets recombined from <em>how</em> novel the
+recombination is. Their finding is the cleanest exception to my headline: making <strong>new
+combinations of components the inventor already knows well</strong> raised average usefulness,
+raised the breakthrough rate, <em>and</em> lowered the failure rate -- all three at once -- so
+long as those familiar components were genuinely combined in unprecedented ways. This is
+<em>not</em> the symmetric fat-both-tails pattern. It&#39;s closer to a free lunch. The lesson is
+that the high-variance, lower-mean version of novelty is specifically the <em>distant,
+unfamiliar</em> kind -- reaching for components you don&#39;t understand. Novelty built on a base
+you&#39;ve mastered tilts the odds in your favor rather than just spreading them.</p>
+<p><strong>You can hire down the downside.</strong> <a href="https://doi.org/10.1287/orsc.2018.1216">Arts &amp; Fleming (2018)</a>
+followed inventors who explored entirely new fields. Doing so raised the novelty of their
+output (by about 7%) but <em>lowered</em> its average value (by 1-3%) -- the bet again. Crucially,
+when the field-switching novice <strong>collaborated with an expert</strong> in the new field, or
+<strong>leaned on the scientific literature</strong>, the value penalty was muted or erased (interaction
+effects of roughly +8% and +9% respectively). They confirm the pattern using a quirky 1985
+Michigan law change that inadvertently pushed inventors into new fields, so it isn&#39;t just
+self-selection. Expertise and science are maps that make unfamiliar terrain less dangerous
+to explore.</p>
+<p><strong>And novelty is not the same thing as value.</strong> A final cold shower from
+<a href="https://doi.org/10.1002/smj.2294">Kaplan &amp; Vakili (2015)</a>, who used topic modeling to find
+patents that <em>originate a genuinely new idea</em> (cognitive novelty) and asked whether those
+were the valuable ones. Mostly not. Originating a new topic was driven by <em>local</em> search
+and paid only modestly (about 1.4x the citations); economic <em>value</em> came from <em>broad</em>
+recombination, which pulls in the opposite direction. In their nanotube-patent sample, only
+20 of 189 truly novel patents were also among the top-cited. Being novel and being valuable
+are distinct achievements that even tend to trade off -- so &quot;just be novel&quot; is, on its own,
+a weak strategy. The jackpots are the rare patents that manage to be both, and they sit far
+out in the tail.</p>
+<h2>Objection! It&#39;s all mismeasured</h2>
+<p>The honest objection to everything above is that &quot;impact&quot; here almost always means
+<strong>forward citations</strong>, and &quot;novelty&quot; means some index built from patent classes or
+reference lists. Both are proxies, and both are contested.</p>
+<p>On novelty: <a href="https://doi.org/10.1016/j.respol.2020.104063">Fontana, Iori, Montobbio &amp; Sinatra (2020)</a>
+stress-tested the popular novelty indicators and found they don&#39;t all measure the same
+thing -- the Uzzi-style &quot;atypical combination&quot; measure overlaps heavily with mere
+<em>interdisciplinarity</em>, and another popular measure struggles to tell novel from non-novel
+articles apart. A validation study by
+<a href="https://doi.org/10.1016/j.joi.2019.100979">Bornmann, Tekles, Zhang &amp; Ye (2019)</a> reached a
+similar split verdict -- one common novelty score lines up with experts&#39; judgments, another
+mostly doesn&#39;t. So any single study&#39;s novelty flag should be taken with salt.</p>
+<p>Here&#39;s why I don&#39;t think it sinks the claim. The variance result doesn&#39;t rest on one flag
+or one outcome. It shows up with classification-based novelty (Fleming; Verhoeven et al.),
+reference-combination novelty (Wang et al.; Uzzi et al.), and text/topic-model novelty
+(Kaplan &amp; Vakili) -- and with citations, top-percentile &quot;breakthrough&quot; dummies, and
+patent-renewal value as the outcome. When five different ways of operationalizing a fuzzy
+idea all produce the same distinctive shape -- thin middle, fat tails -- mismeasurement is
+an unlikely culprit, because the measures&#39; errors don&#39;t line up. If anything, the
+measurement problems bias us toward <em>under</em>-stating the tail: Wang et al.&#39;s delayed-recognition
+result means short citation windows <em>miss</em> novel work&#39;s slow-arriving upside, so our
+estimate of the breakthrough tail is, if anything, too thin.</p>
+<h2>Bottom line</h2>
+<p>I read the evidence on the headline claim -- <strong>novel knowledge combinations raise the
+variance of impact far more than the mean</strong> -- as close to unambiguous. It is one of the
+more robustly replicated patterns in the economics of innovation, convergent across
+patents and papers, across decades, across measures, and from descriptive studies up to a
+couple of quasi-experiments. The corollary that the <em>average</em> return to distant novelty is
+flat-to-slightly-negative is also well supported, with one honest exception: novelty built
+by recombining <em>familiar</em> components appears to be a genuinely better bet, lifting the mean
+while trimming failures (Arts &amp; Veugelers). Where I&#39;d hedge hardest is on full causality --
+most of the evidence is correlational, and even the natural experiments nudge <em>incentives</em>
+rather than novelty itself -- though the mechanism is clean and the quasi-experimental
+results point the right way.</p>
+<p>If the claim is right, the practical upshot is a portfolio one. Variance is cheap to
+someone who can hold many bets and expensive to someone holding one. Take the Uzzi hit
+rates at face value: fund a hundred conventional projects and you expect about five top-5%
+hits; fund a hundred &quot;conventional-core-plus-novel-dash&quot; projects and you expect about
+nine -- but a lone inventor staking a single distant-novelty bet faces mostly the fat
+failure tail with no offsetting draw to rescue the average. So novelty is the right call
+for those built to absorb the variance: diversified funders, large labs, anyone with a
+portfolio, and tenured scientists insured against a few flops. It is a much riskier call
+for the undiversified -- the solo founder, the junior researcher who needs <em>this</em> paper to
+land. And it means our evaluation machinery has it backwards: short citation windows,
+journal-impact-factor screens, and one-shot funding decisions systematically penalize the
+high-variance bets whose whole value is a slow, fat tail. If you want more breakthroughs,
+the levers are to <strong>hold novelty in a portfolio, judge it on long horizons, anchor it to a
+familiar base, and pair the bold with the expert</strong> -- not to exhort everyone to be more
+original.</p>
+<p>So by all means be novel. Just know that you&#39;re buying a lottery ticket, price it like one,
+and make sure you can afford to lose.</p>
+<h2>What we don&#39;t know</h2>
+<ul>
+<li><strong>Is the tail worth the price?</strong> Almost no one has computed the <em>risk-adjusted</em> return
+to novelty -- whether the fat upside actually compensates for the fat downside, and for
+whom. The portfolio logic above is a sketch, not a measured Sharpe ratio for ideas.</li>
+<li><strong>Citations aren&#39;t welfare.</strong> Forward citations track technological influence, not
+private profit or social value, and the three can diverge. A high-variance pattern in
+citations needn&#39;t imply the same pattern in dollars or in welfare.</li>
+<li><strong>How wide is the familiar-novelty loophole?</strong> Arts &amp; Veugelers find that recombining
+familiar components dodges the variance penalty in biotech patents. How general that is
+-- across fields, and how far you can push &quot;familiar&quot; before the tails reopen -- is
+genuinely open.</li>
+<li><strong>We may be measuring the upside too early.</strong> Delayed recognition means the breakthrough
+tail keeps filling in for years. Most studies use citation windows of 5-10 years; the
+true tail of the most novel work might be substantially fatter than even these estimates
+suggest.</li>
+</ul>
+<hr>
+<p><em>Sources: <a href="novelty-high-variance-bet-sources.html">see the papers cited in this post</a>. Every empirical claim above is traceable to one of them.</em></p>
+</article>
+</main>
+<footer class="site">
+<p>Research Notes &middot; generated by the <code>research-blogpost</code> skill. Knowledge here is provisional and AI-drafted from the cited papers.</p>
+</footer>
+</body>
+</html>
