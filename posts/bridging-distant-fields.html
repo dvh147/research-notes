@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Breakthroughs come from bridging distant fields -- but most bridges fail</title>
+<meta name="description" content="Inventions and papers that bridge cognitively distant fields are over-represented among breakthroughs, but the average distant bridge underperforms and most fail outright -- distance buys the tail, not the mean -- so cross-field bridging is a low-hit-rate, fat-tailed bet that funding and evaluation systems, which judge on the average and the short run, systematically under-reward.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="../index.html">Research Notes</a></header>
+<main>
+<article class="post"><a class="back" href="../index.html">&larr; all notes</a>
+<p class="meta"><time>2026-06-07</time> &middot; 14 min read &middot; <span class="tag">economics of innovation</span> <span class="tag">science of science</span></p>
+<p>Here are two pieces of conventional wisdom about where great ideas come from. You
+have heard both, and both have real evidence behind them.</p>
+<p>The first: <strong>the biggest breakthroughs happen at the borders between fields.</strong>
+Combine two areas nobody thought to combine -- microbiology and information theory,
+finance and statistical physics, linguistics and computer science -- and you get the
+discoveries that redraw the map. Funding agencies believe this. Deans believe this.
+The word &quot;interdisciplinary&quot; appears in roughly every university strategic plan
+written this century, always as a virtue.</p>
+<p>The second: <strong>interdisciplinary work gets punished.</strong> It is harder to fund, harder
+to publish, slower to be cited, and riskier for a career. Anyone who has tried to
+place a paper that sits between two literatures -- or watched a cross-field grant
+proposal die in a panel where no single reviewer felt it was theirs -- knows the
+feeling in their stomach.</p>
+<p>Both of these are true. That is the puzzle this post is about, and the resolution
+turns out to be a single fact about <em>distributions</em>. Bridging distant fields really
+is over-represented among the genuine breakthroughs. It is also, on average, a bad
+bet that fails most of the time. Distance doesn&#39;t raise your expected payoff; it
+buys you a lottery ticket with a fatter jackpot and a much bigger pile of losing
+stubs. The celebration and the punishment are both rational responses to the <em>same</em>
+lopsided distribution -- the enthusiasts are staring at the jackpot, the gatekeepers
+at the losing stubs.</p>
+<p>And here&#39;s the part with teeth: because our machinery for funding and judging
+research runs on <em>averages</em> and <em>short horizons</em>, it systematically under-rewards
+exactly the bets whose entire value lives in a rare, slow-arriving tail. That&#39;s the
+claim. Let me build it.</p>
+<p>(A companion post, <a href="novelty-high-variance-bet.html"><em>Novelty is a high-variance bet</em></a>,
+makes the variance argument for novelty in general. This one is its sharper, nastier
+cousin: it&#39;s specifically about <em>distance</em> between fields, about why most distant
+bridges collapse, and about the funding and evaluation system that the distance
+penalty runs through.)</p>
+<h2>The breakthroughs really are at the borders</h2>
+<p>Start with the optimists, because they&#39;re right. The cleanest evidence comes from
+<a href="https://doi.org/10.1126/science.1240474">Uzzi, Mukherjee, Stringer &amp; Jones (2013)</a>,
+who analyzed <strong>17.9 million papers</strong> in <em>Science</em>. For each paper they looked at the
+pairs of prior journals it cited and asked, relative to chance, how <em>typical</em> or
+<em>atypical</em> each pairing was -- a clean way to measure whether a paper yokes together
+bodies of work that rarely appear side by side. Then they asked which papers became
+&quot;hits&quot; (top 5% of citations).</p>
+<p>The winners were not the wild ones. The highest hit rate -- <strong>9.11 per 100, nearly
+double the 5-per-100 baseline</strong> -- went to papers that were <em>mostly</em> conventional but
+carried <strong>a tail of atypical, distant combinations</strong>. Papers that were high on only
+one dimension (very conventional <em>or</em> very atypical, but not both) did about half as
+well. The pattern held whether you defined a hit as the top 1%, 5%, or 10%, and it
+held in every decade from 1950 to 2000. The reach into a distant field is real and it
+matters -- but it pays off when it&#39;s anchored to a solid conventional base, not when
+it&#39;s reaching with both hands.</p>
+<p>The same shape shows up in technology. <a href="https://doi.org/10.1287/orsc.2019.1328">Kneeland, Schilling &amp; Aharonson
+(2020)</a> went hunting for &quot;outlier&quot; patents --
+the genuine far-from-everything inventions -- and found they emerge through a
+distinctive set of processes: long search paths, reasoning from science, and
+<strong>distant recombination</strong>. The tail of the patent distribution is disproportionately
+built from reaches across technological distance. And
+<a href="https://doi.org/10.1016/j.respol.2023.104810">Esposito (2023)</a>, mapping a century of
+US breakthrough inventions, finds they cluster in the metros with the highest local
+<em>knowledge variety</em> and, increasingly, depend on long-distance collaboration. Where
+many different kinds of knowledge can collide, breakthroughs are more common.</p>
+<p>So the enthusiasts have their evidence: when you look in the breakthrough tail, you
+find an unusual concentration of bridges between distant fields. I read this part as
+<strong>well supported</strong> -- big samples, clean measures, convergent across science and
+patents.</p>
+<h2>But the typical bridge is a bad bet</h2>
+<p>Now the part the enthusiasts skip. Being <em>over-represented in the tail</em> is not the
+same as being <em>good on average</em>. A distribution can throw more jackpots and still
+have a lower mean, if it also throws far more zeros. And that is what the distance
+literature finds, again and again, in a shape so consistent it deserves a name: the
+<strong>inverted-U of distance</strong>.</p>
+<p>The canonical statement is <a href="https://doi.org/10.1016/j.respol.2007.04.003">Nooteboom, Van Haverbeke, Duysters, Gilsing &amp; van den
+Oord (2007)</a>, one of the most-cited
+papers in this corner of the field. Studying firms in technology alliances, they find
+that <em>cognitive distance</em> -- how different two partners&#39; knowledge is -- has an
+<strong>inverted-U relationship with innovation performance</strong>. Too little distance and
+there&#39;s nothing new to learn; too much and the partners simply can&#39;t understand each
+other well enough to combine anything. Somewhere in the middle is a peak. The far end
+of the distance axis is not where the magic is; it&#39;s where the failures are.</p>
+<p>This is not one paper&#39;s quirk. The same inverted-U turns up:</p>
+<ul>
+<li>in biopharmaceutical patents, where <a href="https://doi.org/10.1016/j.respol.2016.02.008">Keijl, Gilsing, Knoben &amp; Duysters
+(2016)</a> find an <em>intermediate</em> level
+of recombination -- a blend of local, adjacent, <em>and</em> distant knowledge -- carries
+the highest technological impact, beating both purely local and purely distant
+inventions;</li>
+<li>in firms solving complex problems, where <a href="https://doi.org/10.1002/smj.2615">Caner, Cohen &amp; Pil
+(2017)</a> find that very low <em>and</em> very high
+internal knowledge variety both produce weaker solutions than a moderate range;</li>
+<li>in R&amp;D alliances, where <a href="https://doi.org/10.1016/j.respol.2017.10.005">Subramanian, Bo &amp; Kah-Hin
+(2018)</a> find an inverted-U of
+technological distance on how much firms actually learn from each other;</li>
+<li>and in alliance partner novelty (<a href="https://doi.org/10.1016/j.respol.2020.104011">Kok, Faems &amp; de Faria,
+2020</a>) and green-tech diversification
+(<a href="https://doi.org/10.1016/j.respol.2021.104406">Ning &amp; Guo, 2022</a>), both
+inverted-U.</li>
+</ul>
+<p>When a relationship shows up this reliably across patents, papers, alliances, and
+problem-solving -- with different data, different measures, different research teams --
+I take the <em>shape</em> as <strong>fairly well established</strong>, even though almost all of it is
+correlational (more on that caveat below).</p>
+<p>Here&#39;s the inverted-U in one picture. The x-axis is the distance between the fields
+you&#39;re bridging; the y-axis is your chance of a breakthrough:</p>
+<pre><code>  chance of
+  a breakthrough
+     |            . - .
+     |         .         .
+     |       .             .
+     |      .                .
+     |    .                     .
+     |  .                          .  .
+     |._______________________________ . _____
+       near        moderate          far
+       (nothing    (the sweet        (can&#39;t
+        new)        spot)             integrate)
+</code></pre>
+<p>And here&#39;s a toy version of what that means for a portfolio of bets, using Uzzi&#39;s
+own hit rates. Fund 100 safely-conventional projects and you expect about <strong>5</strong>
+top-tier hits, with very few outright failures -- a tidy, predictable pile. Fund 100
+projects that pair a conventional base with a distant reach and you expect about
+<strong>9</strong> hits -- but you also collect a much bigger heap of duds, because most attempts
+to span a real gap don&#39;t connect. Now fund 100 projects that reach for <em>maximum</em>
+distance with no conventional anchor, and you&#39;re back down around the baseline,
+<strong>~5</strong> or worse, with the most duds of all. The middle column is the only free-ish
+lunch; the far column is mostly losing stubs with a couple of jackpots mixed in.</p>
+<p>That last fact -- &quot;mostly losing stubs&quot; -- is the half of the story the borders-are-
+magic crowd leaves out. <a href="https://doi.org/10.5465/amj.2014.0756">Jung &amp; Lee (2016)</a>
+put it bluntly: when they look at firms searching genuinely original knowledge,
+<strong>local</strong> search <em>outperforms</em> boundary-spanning search at producing high-impact
+breakthroughs. Reaching across is not automatically better; done carelessly it is
+worse. The average bridge underperforms. Most bridges fail.</p>
+<h2>Why the far bridges collapse</h2>
+<p>The inverted-U has a mechanism, and it&#39;s the same one Nooteboom named: you can only
+combine what you can <em>absorb</em>. To weld two distant fields together you need enough of
+a shared base to understand both well enough to see the join -- what the literature
+calls absorptive capacity. Past some distance, the two bodies of knowledge are so
+foreign to each other that nobody in the room can hold both, and the &quot;combination&quot;
+never actually happens. The reach is attempted; the bridge isn&#39;t built.</p>
+<p>The supporting evidence is all about what <em>rescues</em> a distant bridge -- which tells
+you what&#39;s missing when it collapses. <a href="https://doi.org/10.1002/smj.2615">Caner, Cohen &amp; Pil
+(2017)</a> find that firms struggling with too much or
+too little internal variety do better when an alliance partner supplies knowledge in
+a <em>familiar</em> domain -- a handhold. <a href="https://doi.org/10.1016/j.respol.2017.10.005">Subramanian, Bo &amp; Kah-Hin
+(2018)</a> find the costs of distance are
+mitigated when partners share a more homogeneous knowledge base underneath.
+<a href="https://doi.org/10.1111/jpim.12055">Kelley, Ali &amp; Zahra (2013)</a> find that
+breakthrough patents draw on diverse knowledge from <em>other</em> organizations -- but lean
+on <em>geographic proximity</em> to integrate it, because integration is the hard part.
+And <a href="https://doi.org/10.1093/icc/dtab013">Huo (2021)</a> finds the net effect of
+technological distance on a co-invented patent&#39;s quality flips sign depending on the
+<em>structure</em> of the collaboration: negative when partners are otherwise similar,
+positive when the bridge is properly built across distinct regions and networks. The
+distance is the same; whether it pays depends entirely on whether it gets crossed.</p>
+<p>So &quot;bridge distant fields&quot; is incomplete advice. The complete version is: <em>reach for
+a distant field, but only as far as you can still absorb, and only if you can supply
+the shared base -- or the people -- to actually integrate it.</em> Which brings us to the
+two halves of the puzzle.</p>
+<h2>Celebrated and starved</h2>
+<p>If distant bridging is a fat-tailed, mostly-failing bet, then a system that judges
+research on <strong>averages</strong> and <strong>short time windows</strong> will systematically punish it --
+even when the bet is collectively worth making. And that is exactly what we see.</p>
+<p><strong>Funding.</strong> The most striking single result is <a href="https://doi.org/10.1038/nature18315">Bromham, Dinnage &amp; Hua
+(2016)</a>, who took <strong>all 18,476 proposals</strong>
+submitted to the Australian Research Council over five years and measured how far
+each one spanned across fields. The more interdisciplinary the proposal, the <strong>lower
+its probability of being funded</strong> -- a consistent negative relationship that survived
+controls for the number of collaborators, the primary field, and the type of
+institution. The thing every funding agency says it wants is the thing its panels
+are quietly least likely to fund.</p>
+<p><strong>Publishing and prestige.</strong> <a href="https://doi.org/10.1016/j.respol.2012.03.015">Rafols, Leydesdorff, O&#39;Hare, Nightingale &amp; Stirling
+(2012)</a> show how this compounds: the
+top-ranked journals in a field span a <em>narrower</em> set of disciplines than lower-ranked
+ones, so evaluation systems built on journal rankings exhibit a &quot;systematic bias in
+favour of mono-disciplinary research.&quot; Interdisciplinary units look worse on the
+metrics not because they do worse work but because the metrics are shaped like a
+single discipline.</p>
+<p><strong>Citations and time.</strong> Even when interdisciplinary work does land, the reward
+arrives late. <a href="https://doi.org/10.1016/j.joi.2023.101468">Zhang, Wang, Du &amp; Havlin (2024)</a>
+find that interdisciplinary papers take significantly <strong>longer to reach their citation
+peak</strong> -- a delay that&#39;s nearly universal across fields and decades, and that goes
+beyond the usual rich-get-richer dynamics. So any evaluation using a short citation
+window mechanically understates interdisciplinary work, because it&#39;s measuring the
+tail before the tail has arrived. And the citation relationship itself is, once again,
+an inverted-U: <a href="https://doi.org/10.1371/journal.pone.0135095">Yegros-Yegros, Rafols &amp; D&#39;Este (2015)</a>
+find that variety, balance, <em>and</em> disparity each have a hump-shaped relationship with
+citations, with <em>distal</em> (most disparate) interdisciplinarity the part that gets
+discounted -- either because it fails more often or because audiences are wary of
+papers that mix wildly different traditions.</p>
+<p><strong>Careers.</strong> Put it together at the level of a scientist and you get the title of
+<a href="https://doi.org/10.1177/0001839216665364">Leahey, Beckman &amp; Stanko (2017)</a>:
+&quot;Prominent but Less Productive.&quot; Across roughly 900 scientists and 32,000 papers,
+doing interdisciplinary work <em>lowers</em> a scientist&#39;s publication output -- the
+cognitive and coordination costs of spanning fields are real -- even as it <em>raises</em>
+the visibility of the papers that do get out. A production penalty with an impact
+premium: you publish less, but what you publish travels further. For an individual
+deciding how to spend a career, that is a genuinely double-edged deal, and a rational
+person facing a tenure clock might well decline it.</p>
+<p>None of these gatekeepers is being irrational. They&#39;re responding to the real
+distribution: most distant bridges fail, and the failures are visible now while the
+jackpots are rare and slow. The trouble is that <em>averaging over a fat-tailed bet
+throws away the whole reason to make it.</em> The expected value of a hundred distant
+attempts can be excellent even though the median attempt is a dud -- and a system
+that funds the median starves the portfolio.</p>
+<p>A quick back-of-the-envelope on the stakes. If a distant-bridge portfolio hits the
+top tier at ~9 per 100 versus ~5 for the safe pile, then an evaluator who can&#39;t see
+the tail -- who funds on average impact or a three-year citation count -- and so
+defaults to the conventional projects gives up something like <strong>4 extra top-tier
+breakthroughs per 100 funded.</strong> That is the price of judging a lottery by its losing
+stubs.</p>
+<h2>The team is the bridge</h2>
+<p>There&#39;s a way out of the absorptive-capacity trap, and it&#39;s the most useful nuance in
+this whole area: you don&#39;t need <em>one mind</em> to span the distance if you have <em>several
+minds</em> who collectively do. This is where the distance story becomes a story about
+teams -- and where it diverges most sharply from the lone-inventor framing of the
+novelty post.</p>
+<p>The sharpest evidence is <a href="https://doi.org/10.1177/00018392211027512">Vestal &amp; Danneels (2022)</a>,
+who study <strong>834 multi-cluster R&amp;D teams</strong> in nanotechnology -- teams whose members sit
+in different geographic and technological &quot;hot spots.&quot; The technological distance
+between those clusters has -- you can guess by now -- an <strong>inverted-U with the team&#39;s
+chance of a breakthrough</strong>: a moderate gap between specialties is ideal, too large a
+gap and the team can&#39;t integrate. But the crucial finding is what determines whether
+the gap gets bridged: the density of <strong>inter-cluster ties</strong>, the actual collaborative
+links running <em>across</em> the distance. Teams with the connective tissue to move
+knowledge between their distant pockets turn distance into breakthroughs; teams
+without it just have distance.</p>
+<p>Two more pieces fit here. Back in the Uzzi data, <strong>teams were 37.7% more likely than
+solo authors</strong> to insert a novel, distant combination into an otherwise familiar
+base -- the winning recipe is easier to pull off with more than one specialist in the
+room. And <a href="https://doi.org/10.1287/mnsc.1120.1572">Gruber, Harhoff &amp; Hoisl (2013)</a>
+find that inventors trained as <em>scientists</em> span technological boundaries more readily
+than those trained as engineers, a reminder that the ability to bridge is a specific,
+unevenly distributed skill. The bridge, in other words, is not the gap -- it&#39;s the
+people and ties that reach across it. Assemble distance without the means to integrate
+it and you&#39;ve built a chasm, not a bridge.</p>
+<h2>Objection! Isn&#39;t this just &quot;novelty&quot;?</h2>
+<p>The first thing a careful reader should worry about: is &quot;distance between fields&quot;
+really distinct from plain &quot;novelty,&quot; or am I relabeling the same variance result?</p>
+<p>It&#39;s a fair challenge, and the honest answer is that the two are <em>related but not
+identical.</em> Novelty (as in the <a href="novelty-high-variance-bet.html">companion post</a>) is
+about making <em>any</em> unusual combination; the distance literature isolates one specific
+flavor -- how <em>far apart</em> the combined fields are -- and finds that this dimension has
+its own signature. The decomposition matters: <a href="https://doi.org/10.1371/journal.pone.0135095">Yegros-Yegros et al.
+(2015)</a> split interdisciplinarity into
+variety, balance, and <em>disparity</em>, and it&#39;s disparity -- distance -- that behaves
+worst. <a href="https://doi.org/10.1007/s11192-023-04662-0">Ke (2023)</a>, studying how
+biomedical papers get cited by patents, finds the same split: spanning <em>more</em> fields
+(variety) and spanning them <em>evenly</em> (balance) help, but spanning <em>distant</em> fields
+(disparity) offsets the gain on the extensive margin while raising impact intensity
+conditional on landing. Distance is doing distinct work, and it is the part that both
+fattens the tail and thins the middle. So this isn&#39;t a synonym for novelty; it&#39;s the
+specific sub-component that the &quot;bridge distant fields&quot; slogan is actually about.</p>
+<h2>Objection! Maybe the gatekeepers are right</h2>
+<p>The deeper objection: if most distant bridges fail, maybe funders and referees are
+<em>correctly</em> steering scarce money toward safer, higher-expected-value work. Maybe the
+penalty is just good risk management.</p>
+<p>I think this is half right and half wrong, and the line between them is the whole
+argument. It&#39;s right that a <em>single</em> distant bet is a bad bet -- a lone researcher
+staking one project on a far-flung bridge faces mostly the failure tail. It&#39;s wrong
+as a verdict on the <em>portfolio.</em> The breakthroughs that move fields disproportionately
+come from these bridges (Uzzi; Kneeland; Esposito), and their value is enormous and
+slow to show up (Zhang et al.). A funder holding a hundred bets is exactly the agent
+who <em>should</em> tolerate the variance -- and is exactly the agent currently judging each
+bet by its median outcome and three-year citations. The mismatch isn&#39;t that distance
+is good and gatekeepers are dumb; it&#39;s that distance is a <em>portfolio</em> play being
+evaluated with <em>single-bet</em>, short-horizon tools. That&#39;s a fixable design flaw, not a
+law of nature.</p>
+<p>Where I&#39;d hedge hardest is <strong>causality.</strong> Almost all of this evidence is
+correlational: distant work <em>turns out</em> to be more variable and worse-rewarded, but we
+rarely get to randomize distance. The inverted-U could partly reflect <em>who</em> attempts
+distant bridges rather than the distance itself. The cleaner quasi-experimental
+results in the broader novelty literature nudge <em>incentives</em> toward risk rather than
+distance directly. So I hold the <em>shape</em> of the relationship with more confidence than
+any specific causal magnitude.</p>
+<h2>Bottom line</h2>
+<p>I read the evidence like this. That breakthroughs are <strong>over-represented at the
+borders between distant fields</strong> is well supported. That the <strong>average</strong> distant
+bridge underperforms and <strong>most fail</strong> -- the inverted-U of distance -- is one of the
+more reliably replicated patterns in the innovation literature, though it is largely
+correlational. That interdisciplinary work is <strong>systematically under-rewarded</strong> by
+funding, publishing, citation, and career metrics is convergent across several large
+studies. Stack them and the paradox dissolves: cross-field bridging is a low-hit-rate,
+fat-tailed, slow-paying bet, simultaneously the source of the biggest wins and a
+loser on average -- and our evaluation machinery, built for averages and short
+horizons, reliably picks the wrong tail to optimize against.</p>
+<p>The practical upshots are concrete. <strong>Reach a moderate distance, not the maximum</strong> --
+the sweet spot of the inverted-U beats the far edge. <strong>Anchor the reach in a
+conventional base</strong> -- the Uzzi recipe, conventional core plus distant dash, not
+distance for its own sake. <strong>Bridge with teams and ties, not lone heroics</strong> -- supply
+the absorptive capacity the gap demands. And if you <em>fund</em> research, <strong>hold distance
+in a portfolio and judge it on long horizons</strong>, because the entire case for the bet is
+a tail you cannot see in a three-year window. The slogan &quot;bridge distant fields&quot; isn&#39;t
+wrong. It&#39;s just dangerously incomplete -- it names the jackpot and hides the pile of
+losing stubs, and most people who follow it end up holding stubs.</p>
+<h2>What we don&#39;t know</h2>
+<ul>
+<li><strong>Is the tail worth the price?</strong> No one has really computed the <em>risk-adjusted</em>
+social return to distant bridging -- whether the rare jackpots actually pay for the
+many failures, and for which funders. The portfolio argument is a logic, not a
+measured number.</li>
+<li><strong>How far is too far?</strong> The inverted-U says there&#39;s an optimum, but where it sits --
+and whether it shifts by field, era, or the availability of bridge-builders -- is
+largely uncharted. &quot;Moderate distance&quot; is easy to say and hard to operationalize ex
+ante.</li>
+<li><strong>Causality.</strong> We mostly observe that distant work is more variable and less
+rewarded; we rarely get to <em>assign</em> distance. A clean natural experiment that pushes
+otherwise-similar projects to span more or less distance would sharpen all of this.</li>
+<li><strong>Does the AI/large-team era change the bridging cost?</strong> If models lower the cost of
+absorbing a distant field, the inverted-U&#39;s peak could move outward -- making far
+bridges cheaper to cross and the historical penalty partly an artifact of how
+expensive integration used to be.</li>
+<li><strong>Citations aren&#39;t welfare.</strong> Almost every outcome here is a citation or patent
+count. The breakthroughs that matter most for human welfare need not be the ones
+that show up brightest in the tail of a citation distribution.</li>
+</ul>
+<hr>
+<p><em>Sources: <a href="bridging-distant-fields-sources.html">see the papers cited in this post</a>. Every empirical claim above is traceable to one of them.</em></p>
+</article>
+</main>
+<footer class="site">
+<p>Research Notes &middot; generated by the <code>research-blogpost</code> skill. Knowledge here is provisional and AI-drafted from the cited papers.</p>
+</footer>
+</body>
+</html>
