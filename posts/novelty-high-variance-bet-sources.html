@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Sources - Novelty is a high-variance bet</title>
-<meta name="description" content="Sources for Novelty is a high-variance bet">
+<title>Sources - Novelty is a high-variance bet — at least in patents</title>
+<meta name="description" content="Sources for Novelty is a high-variance bet — at least in patents">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -96,7 +96,7 @@ the back-office report for per-paper verification status.</p>
 <td>Do non-competition agreements lead firms to pursue risky R&amp;D projects?</td>
 <td>Strategic Management Journal (topman)</td>
 <td><a href="https://doi.org/10.1002/smj.2155">10.1002/smj.2155</a></td>
-<td>Closest-to-causal anchor: enforcement nudge pushes inventions into BOTH tails + novel areas (direction only).</td>
+<td>Closest-to-causal anchor: two opposite-signed state law changes (TX 1994, FL 1996) push inventions into BOTH tails + novel areas.</td>
 </tr>
 <tr>
 <td>singh-fleming2010</td>
@@ -112,7 +112,7 @@ the back-office report for per-paper verification status.</p>
 <td>Technology familiarity, recombinant novelty, and breakthrough invention</td>
 <td>Industrial and Corporate Change (fieldinnov)</td>
 <td><a href="https://doi.org/10.1093/icc/dtu029">10.1093/icc/dtu029</a></td>
-<td>The honest exception: novelty over FAMILIAR components raises mean + breakthroughs AND cuts failure.</td>
+<td>The sharpest counter-evidence: in biotech, recombinant novelty raises the mean AND breakthroughs AND cuts failures -- the authors reject the variance reading outright.</td>
 </tr>
 <tr>
 <td>arts-fleming2018</td>
@@ -149,7 +149,7 @@ the back-office report for per-paper verification status.</p>
 <td>New and atypical combinations: an assessment of novelty and interdisciplinarity</td>
 <td>Research Policy (fieldinnov)</td>
 <td><a href="https://doi.org/10.1016/j.respol.2020.104063">10.1016/j.respol.2020.104063</a></td>
-<td>&quot;Objection! Mismeasurement!&quot; -- novelty indicators don&#39;t all measure the same thing; atypicality ~ interdisciplinarity.</td>
+<td>&quot;Objection! Mismeasurement!&quot; -- on 230,854 American Physical Society articles: Uzzi-style atypicality ~ interdisciplinarity, and <strong>the Wang et al. measure &quot;finds it difficult to tell novel and non-novel articles apart&quot;</strong>.</td>
 </tr>
 <tr>
 <td>bornmann2019</td>
@@ -157,7 +157,7 @@ the back-office report for per-paper verification status.</p>
 <td>Do we measure novelty when we analyze unusual combinations of cited references?</td>
 <td>Journal of Informetrics (fieldbibliometrics)</td>
 <td><a href="https://doi.org/10.1016/j.joi.2019.100979">10.1016/j.joi.2019.100979</a></td>
-<td>Validation: one common novelty score matches expert judgment, another mostly doesn&#39;t -- take any single flag with salt.</td>
+<td>Validation against F1000Prime expert tags: the Uzzi-derived score (U) passes, <strong>Wang, Veugelers &amp; Stephan&#39;s score (W) fails</strong> -- i.e. the post&#39;s own core science measure.</td>
 </tr>
 </tbody></table>
 <h2>Background / seminal lineage</h2>
@@ -207,11 +207,37 @@ the back-office report for per-paper verification status.</p>
 <hr>
 <p><strong>Counts:</strong> seeds 2 (also core) - core 9 - supporting 2 - background 1 - web/non-corpus 1 (Uzzi, within core) - total distinct cited 12.
 All corpus DOIs are also appended to <code>registry/master_literature_index.md</code>.</p>
-<p><strong>Verification caveats (carried into the post&#39;s wording):</strong></p>
+<p><strong>Verification status (revised 2026-07-28, after reading the full texts).</strong>
+All eleven cited papers with a DOI were obtained and read in full; nine have structured
+summaries in the post&#39;s local (unpublished) <code>summaries/</code> folder. Remaining caveats:</p>
 <ul>
-<li><strong>Conti (2014)</strong> -- full text paywalled; no magnitudes independently verified, so the post reports DIRECTION only.</li>
-<li><strong>Arts &amp; Veugelers (2015)</strong> -- abstract directions verified; precise tail magnitudes (e.g., breakthrough-rate ratio) not table-confirmed, so the post states the qualitative result only.</li>
-<li><strong>Verhoeven, Bakker &amp; Veugelers (2016)</strong> -- magnitudes read from the KU Leuven working-paper PDF (MSI_1509); abstract and table structure match the published Research Policy version.</li>
+<li><strong>Conti (2014)</strong> -- full text now read; the earlier &quot;direction only&quot; caveat is withdrawn.
+The paper itself, however, reports <strong>no marginal effects, odds ratios or predicted
+probabilities anywhere</strong> -- only raw logit coefficients -- so the post still gives
+direction and significance rather than effect sizes. Identification is two opposite-signed
+state law changes (Texas 1994, Florida 1996), each with a single treated state.</li>
+<li><strong>Arts &amp; Veugelers (2015)</strong> -- tail magnitudes now table-confirmed (breakthrough rate 2.2%
+vs 0.9%; zero-citation share 40% -&gt; 31%, Table 2, p. 1231). The paper explicitly rejects a
+variance interpretation for biotechnology: &quot;the biotech data therefore do not support the
+increasing variance effect but a mean shifting effect&quot; (p. 1237).</li>
+<li><strong>Verhoeven, Bakker &amp; Veugelers (2016)</strong> -- <strong>correction.</strong> Version 1&#39;s magnitudes were read
+from a KU Leuven working paper, cited here as MSI_1509; the file was in fact <strong>MSI_1319
+(May 2013)</strong>, which uses a <em>different</em> three-indicator framework (New Origins / New
+Functionality / New Impact), a sample of 2,297,499 applications rather than 5.3 million
+families, and reports <strong>the opposite sign on the mean</strong>. All magnitudes now come from the
+published <em>Research Policy</em> article. The working paper is retained separately for reference.</li>
+<li><strong>Wang, Veugelers &amp; Stephan (2017)</strong> -- magnitudes verified against the full text, but note
+that this paper&#39;s novelty score is the one <strong>questioned by both measurement papers cited
+below</strong>: Fontana et al. (2020) find it &quot;finds it difficult to tell novel and non-novel
+articles apart&quot;, and Bornmann et al. (2019) fail it on convergent validity against expert
+assessments while passing the Uzzi-derived score. The revised post says so explicitly.</li>
+<li><strong>Uzzi et al. (2013)</strong> -- the PDF obtained by the fetcher is the <em>Supplementary Materials</em>,
+not the five-page article (both carry the same title, so title-based verification passed).
+Magnitudes were read from a separate copy of the printed article plus that supplement.</li>
+<li><strong>Fleming (2001)</strong> and <strong>Singh &amp; Fleming (2010)</strong> -- scanned or damaged text layers; the
+abstract and introduction of each were transcribed by hand and checked against the page
+images, and Singh &amp; Fleming&#39;s coefficients were read from rendered table images because the
+text layer strips decimal points.</li>
 </ul>
 </article>
 </main>
